@@ -11,7 +11,10 @@ app.use(cors());
 
 const io = new Server(server, {
   cors: {
-    origin: ["https://d9c.github.io", "http://localhost:3000"],
+    origin: [
+      "https://d9c.github.io/livechat-frontend",
+      "http://localhost:3000",
+    ],
     methods: ["GET", "POST"],
   },
 });
